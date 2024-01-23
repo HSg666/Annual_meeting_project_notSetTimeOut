@@ -24,11 +24,11 @@ HTML5 + CSS3 + JS、ES6+ + jQuery + flexible(rem 自适应)
 
 ### 1、抽奖页
 
-![](../\Annual_meeting_project_notSetTimeOut\images\PrePictur\页面展示.png)
+![](https://github.com/HSg666/Annual_meeting_project_notSetTimeOut/blob/main/images/PrePictur/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA.png)
 
 ### 2、中奖名单弹框
 
-![](../\Annual_meeting_project_notSetTimeOut\images\PrePictur\中奖名单弹框.png)
+![](https://github.com/HSg666/Annual_meeting_project_notSetTimeOut/blob/main/images/PrePictur/%E4%B8%AD%E5%A5%96%E5%90%8D%E5%8D%95%E5%BC%B9%E6%A1%86.png)
 
 ## 项目说明
 
