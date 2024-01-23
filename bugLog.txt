@@ -1,4 +1,4 @@
 // bug 记录
 如果网页控制台出现images中的人员图片找不到，飘红，页面未能正常展示，说明你图片路径错了，而且引入项目错了。
 解决方案：应该将整个Annual_meeting_project项目放进VSCode，js/new_sign_list.json中的图片路径要写成这样：
-/images/userList/赵云.jpg，路径要对，这样在index.html鼠标右键live server时页面才能正常展示人员图片。
+/images/userList/赵云.jpg，路径要对，这样在index.html鼠标右键live server时页面才能正常展示人员图片。333
