@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="maximum-dpr=2" name="flexible" />
+    <link rel="stylesheet" href="css/flexible.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/flexible.js"></script>
+
+    <title>幸运大抽奖 - 2024年会</title>
+  </head>
+  <body>
+    <div class="lottery-bg">
+      <!-- 头部窗帘 -->
+      <div class="lottery-banner">
+        <div class="top-curtain left">
+          <img src="images/top_curtain.png" alt="" />
+        </div>
+        <div class="top-curtain right">
+          <img src="images/top_curtain.png" alt="" />
+        </div>
+      </div>
+      <!-- 头部窗帘结束 -->
+
+      <!-- 标题 -->
+      <h1 class="lottery-title">
+        <img src="images/title.png" alt="" />
+      </h1>
+      <!-- 标题结束 -->
+
+      <!-- 选项卡 -->
+      <div class="lottery-tabs">
+        <!-- 选项卡标题  -->
+        <div class="lottery-tabs-nav" id="lottery-tabs-nav">
+          <div class="first tab">
+            <p>特等奖</p>
+          </div>
+          <div class="second tab">
+            <p>一等奖</p>
+          </div>
+          <div class="third tab">
+            <p>二等奖</p>
+          </div>
+          <div class="fourth tab">
+            <p>三等奖</p>
+          </div>
+          <div class="fifth tab">
+            <p>幸运奖</p>
+          </div>
+          <div class="special tab" id="six_lottery">
+            <p>惊喜奖</p>
+          </div>
+          <!-- <div class="special tab">
+            <span class="add">+</span>
+            <p>自定义</p>
+            <span class="subtract">-</span>
+          </div> -->
+        </div>
+        <!-- 选项卡标题结束 -->
+
+        <!-- 选项卡内容 -->
+        <div class="lottery-tabs-content">
+          <!-- 特等奖 -->
+          <div class="first-prize prize">
+            <!-- <div class="goods-img">
+              <img src="images/mix.png" alt="" />
+            </div> -->
+            <div class="lottery-absolute">特等奖：虎牌电饭煲</div>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">特等奖：小米旗舰手机MIX3</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li first-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="oneBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+
+          <!-- 一等奖 -->
+          <div class="second-prize prize">
+            <!-- <div class="goods-img">
+              <img src="images/robot.png" alt="" />
+            </div> -->
+
+            <div class="lottery-absolute">一等奖：西屋洁身器</div>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">一等奖：扫地机器人</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li second-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="twoBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+          <!-- 二等奖 -->
+          <div class="third-prize prize">
+            <!-- <div class="goods-img">
+              <img src="images/tv.png" alt="" />
+            </div> -->
+            <div class="lottery-absolute">二等奖：瑜伽垫</div>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">二等奖：高清电视</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li third-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li third-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li third-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li third-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li third-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="threeBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+          <!-- 三等奖 -->
+          <div class="fourth-prize prize">
+            <!-- <div class="goods-img">
+              <img src="images/dianfanbao.png" alt="" />
+            </div> -->
+            <h2 class="lottery-absolute">三等奖：白色四件套(洗水)</h2>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">三等奖：电饭煲</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li fourth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fourth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fourth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fourth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fourth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="fourBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+          <!-- 幸运奖 -->
+          <div class="fifth-prize prize">
+            <!-- <div class="goods-img">
+              <img src="images/chaoguo.png" alt="" />
+            </div> -->
+            <div class="lottery-absolute">幸运奖：毛巾套装</div>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">幸运奖：电炒锅</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="fiveBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+          <!-- 惊喜奖 -->
+          <div class="six-prize prize">
+            <!-- <div class="goods-img">
+                        <img src="images/chaoguo.png" alt="" />
+                      </div> -->
+            <div class="lottery-absolute">惊喜奖：密码行李箱</div>
+            <div class="lottery-absolute-timerout"></div>
+            <!-- <h2 class="goods-name">幸运奖：电炒锅</h2> -->
+            <div class="people-absolute">
+              <ul class="people-ul">
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+                <li class="people-li fifth-crown">
+                  <img src="images/question.png" alt="" />
+                  <span class="people-name"></span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 点击开始按钮 -->
+            <div class="lottery-btn" id="sixBtn">
+              <p>开始</p>
+            </div>
+            <!-- 点击开始按钮结束 -->
+          </div>
+        </div>
+        <!-- 选项卡内容结束 -->
+      </div>
+      <!-- 选项卡结束 -->
+      <div class="List-winners" id="showListBtn">中奖名单</div>
+      <!-- <button id="showListBtn">显示中奖名单</button> -->
+
+      <!-- 中奖名单图层蒙版盒子 start -->
+      <div class="overlay">
+        <div class="modal">
+          <div class="close-btn">X</div>
+          <div class="content">
+            <!-- 这里放大图片背景 -->
+            <div class="modal-header">年会中奖名单</div>
+            <!-- <div class="modal-lottery">幸运大抽奖</div> -->
+            <!-- <div class="modal-lottery">中奖名单</div> -->
+            <!-- 中奖大盒子 -->
+
+            <!-- 中奖名单大盒子由js动态生成,无需手写 -->
+            <!-- <div class="lottery-content">
+              <div class="lottery-level-outer">
+                <div class="lottery-level-header">特等奖</div>
+                <div class="lottery-level-main">
+                  <div class="lottery-level-main-item">林浩生</div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- 中奖名单图层蒙版盒子 end -->
+
+      <!-- 底部扇子 -->
+      <div class="bottom-fan">
+        <img src="images/bottom_fan.png" alt="" />
+      </div>
+      <div class="bottom-fan-right">
+        <img src="images/bottom_fan.png" alt="" />
+      </div>
+      <!-- 底部扇子结束 -->
+
+      <!-- 底部木板 -->
+      <div class="bottom-floor">
+        <img src="images/bottom_floor.png" alt="" />
+      </div>
+      <!-- 底部木板结束 -->
+    </div>
+
+    <!-- 预加载头像 -->
+    <div class="reload-img"></div>
+    <!-- 预加载头像结束 -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script></script>
+  </body>
+</html>

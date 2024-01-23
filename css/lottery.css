@@ -1,0 +1,38 @@
+/* 背景 */
+html,body{
+    height: 100%;
+}
+
+body{
+    background: url("../images/bg.jpg") no-repeat top center fixed;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*height: 14.21rem;*/
+    /*width: 17.78rem;*/
+    /*height: 10.00rem;*/
+}
+
+
+/* 标题 */
+.lottery-title{
+    width: 6.30rem;
+    height: 1.25rem;
+   margin: 0 auto;
+   padding-top: 0.99rem;
+}
+.lottery-title img{
+    width: 100%;
+    display: block;
+}
+
+
+.phone{
+    width: 1.79rem;
+    height: 2.06rem;
+    padding-top: 1.20rem;
+    margin: 0 auto;
+}
+.phone img{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,177 @@
+html{
+
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat fixed center;
+    background-size: 100% 100%;
+    padding: 0 0.66rem;
+}
+
+/* 选项卡 */
+.lottery-tabs{
+    margin-top: 3.21rem;
+}
+/* 选项卡标题 */
+.lottery-tabs .lottery-tabs-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.lottery-tabs .lottery-tabs-nav{
+    display: block;
+}
+.special, .second, .fourth{
+    float: left;
+}
+.first, .third, .fifth{
+    float: right;
+}
+.second, .fourth{
+    clear: both;
+}
+
+.lottery-tabs .lottery-tabs-nav div{
+
+    width: 1.67rem;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.41rem;
+    cursor: pointer;
+}
+.lottery-tabs .lottery-tabs-nav div p{
+    width: 1.48rem;
+    height: 0.51rem;
+    line-height: 0.51rem;
+    border-radius: 4px;
+    background-color: #8d33e0;
+    text-align: center;
+}
+
+.lottery-tabs .lottery-tabs-nav .on{
+    background: gold;
+}
+
+/* 选项卡内容 */
+.reward-people{
+  /*  height: 5.5rem;*/
+
+}
+
+.reward-people .reward-people-li{
+    display: none;
+}
+.reward-people .show{
+    display: block;
+}
+
+.reward-people .reward-people-li .reward-img{
+    width: 1.67rem;
+    height: 2.04rem;
+    margin: 0 auto;
+    margin-bottom: 1.13rem;
+}
+.reward-people .reward-people-li .reward-img img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.reward-people .reward-people-li .reward-profile {
+    text-align: center;
+}
+
+.reward-people .reward-people-li .reward-profile .reward-profile-mask {
+    /*  background: url("../images/reward_border.png") no-repeat center top;
+      background-size: 100% 100%;*/
+    width: 2.99rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    margin-right: 0.25rem;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid transparent;
+    overflow: hidden;
+
+}
+
+.reward-people .reward-people-li .reward-profile .reward-profile-mask:after{
+    content: '';
+    background: url('../images/reward_border.png') no-repeat center top;
+    background-size: 100% 100%;
+    width: 2.99rem;
+    height: 2.8rem;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.reward-people .reward-people-li .reward-profile .reward-profile-ul{
+    /*  */
+}
+
+
+.reward-people .reward-people-li .reward-profile .reward-profile-ul li{
+    width: 1.39rem;
+    height: 1.59rem;
+    margin: 0 auto;
+    margin-top: 0.56rem;
+}
+
+
+.reward-people .reward-people-li .reward-profile .reward-profile-ul img{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/*.reward-people .reward-people-li .reward-profile .border{
+    position: absolute;
+    left: -0.84rem;
+    top: -0.68rem;
+    width: 2.99rem;
+    height: 2.18rem;
+}
+
+.reward-people .reward-people-li .reward-profile.border img{
+    width: 100%;
+    display: block;
+}*/
+
+.clear-margin{
+    margin-right: 0 !important;
+}
+
+
+/* 开始按钮 */
+.lottery-btn{
+    width: 1.67rem;
+    height: 0.70rem;
+    line-height: 0.70rem;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    text-align: center;
+    margin: 0.81rem auto;
+}
+
+.lottery-btn p{
+    width: 1.48rem;
+    height: 0.51rem;
+    line-height: 0.51rem;
+    border-radius: 4px;
+    background-color: #fa1fd3;
+    text-align: center;
+}
+

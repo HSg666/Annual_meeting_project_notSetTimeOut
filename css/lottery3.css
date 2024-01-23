@@ -1,0 +1,173 @@
+html{
+    background-color: #a71015;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.lottery-bg{
+    background: url("../images/bg.jpg") no-repeat center top;
+    background-size: 100% 100%;
+    /*  background: #a71015;*/
+    width: 100%;
+    height: 100%;
+}
+
+/* 头部窗帘 */
+.lottery-banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lottery-banner .top-curtain{
+    /*width: 7.44rem;
+    height: 1.75rem;*/
+    width: 803px;
+    height: 189px;
+}
+.lottery-banner .top-curtain img{
+    width: 100%;
+}
+
+.lottery-banner .right{
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+/* 金色春字 */
+.lottery-banner .right:after{
+    content: '';
+    background: url("../images/golden_chun.png") no-repeat center top;
+    background-size: 100% 100%;
+    position: absolute;
+    /*width: 3.58rem;
+    height: 5.87rem;*/
+    width: 387px;
+    height: 634px;
+    left: 0;
+    /* top: 0;*/
+    transform: rotateY(180deg);
+}
+
+.lottery-banner .left:after{
+    content: '';
+    background: url("../images/golden_chun.png") no-repeat center top;
+    background-size: 100% 100%;
+    position: absolute;
+    /*width: 3.58rem;
+    height: 5.87rem;*/
+    width: 387px;
+    height: 634px;
+    left: 0;
+    transform: rotateY(180deg);
+    /* top: 0;*/
+}
+
+
+/*.golden-chun{
+    width: 3.58rem;
+    height: 5.87rem;
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.golden-chun img{
+    width: 100%;
+}*/
+
+
+
+
+/* 标题 */
+.lottery-title{
+    /* 680 135 */
+    /* width: 6.30rem;
+     height: 1.25rem;*/
+    width: 680px;
+    height: 135px;
+    margin: 0 auto;
+    /* padding-top: 0.99rem;*/
+}
+
+.lottery-title img{
+    width: 100%;
+}
+
+
+
+
+/* 选项卡 */
+.lottery-tabs{
+    /* margin-top: 0.83rem;*/
+    /*padding: 0 2.68rem;*/
+    margin-top: 90px;
+    padding: 0 280px;
+
+    position: relative;
+}
+
+/* 选项卡导航栏 */
+.lottery-tabs .lottery-tabs-nav .tab{
+    background: url("../images/tab.png") no-repeat center top;
+    background-size: 100% 100%;
+    /*  width: 1.94rem;
+      height: 0.57rem;*/
+    width: 201px;
+    height: 61px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe281;
+    cursor: pointer;
+}
+
+.lottery-tabs .lottery-tabs-nav .on{
+    background: url("../images/tab_active.png") no-repeat center top;
+    background-size: 100% 100%;
+    /* width: 1.94rem;
+     height: 0.57rem;*/
+    width: 201px;
+    height: 61px;
+    color:#d34436;
+}
+
+.first, .third, .fifth{
+    float: left;
+}
+.second, .fourth, .special{
+    float: right;
+}
+.third, .fifth{
+    clear: both;
+}
+
+.lottery-tabs .lottery-tabs-nav .tab{
+    /*margin-bottom: 0.47rem;*/
+    margin-bottom: 51px;
+}
+
+
+
+/* 选项卡内容 */
+.lottery-tabs .lottery-tabs-content .prize{
+    display: none;
+}
+.lottery-tabs .lottery-tabs-content .show{
+    display: block;
+}
+
+.lottery-tabs .lottery-tabs-content{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+/* 抽奖开始按钮 */

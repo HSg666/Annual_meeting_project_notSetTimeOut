@@ -1,0 +1,964 @@
+html {
+  background-color: #a71015;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.lottery-bg {
+  background: url("../images/bg.jpg") no-repeat center top;
+  background-size: 100% 100%;
+  /*  background: #a71015;*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 头部窗帘 */
+.lottery-banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lottery-banner .top-curtain {
+  /* width: 803px;
+    height: 189px;*/
+  width: 10.71rem;
+  height: 1.82rem;
+  z-index: -1;
+}
+.lottery-banner .top-curtain img {
+  width: 100%;
+}
+
+.lottery-banner .right {
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+/* 金色春字 */
+.lottery-banner .right:after {
+  content: "";
+  background: url("../images/golden_chun.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /* width: 387px;
+    height: 634px;*/
+  width: 5.16rem;
+  height: 8.45rem;
+  left: 0;
+  top: 0;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.lottery-banner .left:after {
+  content: "";
+  background: url("../images/golden_chun.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 387px;
+    height: 634px;*/
+  width: 5.16rem;
+  height: 8.45rem;
+  left: 0;
+  transform: rotateY(180deg);
+  top: 0;
+  z-index: -1;
+}
+
+/* 标题 */
+.lottery-title {
+  /* width: 680px;
+    height: 135px;*/
+  width: 9.07rem;
+  height: 1.8rem;
+  margin: 0 auto;
+  /* padding-top: 0.99rem;*/
+}
+
+.lottery-title img {
+  width: 100%;
+}
+
+/* 选项卡 */
+.lottery-tabs {
+  /*   margin-top: 90px;
+    padding: 0 280px;*/
+  margin-top: 1.2rem;
+  /*padding: 0 3.73rem;*/
+  padding: 0 1.73rem;
+  /*position: relative;*/
+}
+
+/* 选项卡导航栏 */
+.lottery-tabs-nav {
+  padding: 0 1.73rem;
+}
+
+.lottery-tabs .lottery-tabs-nav .tab {
+  background: url("../images/tab.png") no-repeat center top;
+  background-size: 100% 100%;
+  /*width: 201px;
+    height: 61px;
+    font-size: 22px;*/
+  width: 2.68rem;
+  height: 0.81rem;
+  font-size: 0.29rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffe281;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.lottery-tabs .lottery-tabs-nav .on {
+  background: url("../images/tab_active.png") no-repeat center top;
+  background-size: 100% 100%;
+  /*width: 201px;
+    height: 61px;*/
+  width: 2.68rem;
+  height: 0.81rem;
+  color: #d34436;
+}
+
+.first,
+.third,
+.fifth {
+  float: left;
+}
+.second,
+.fourth,
+.special {
+  float: right;
+}
+.third,
+.fifth {
+  clear: both;
+}
+
+.lottery-tabs .lottery-tabs-nav .tab {
+  /* margin-bottom: 51px;*/
+  margin-bottom: 0.68rem;
+}
+
+.lottery-tabs .lottery-tabs-nav .special {
+  position: relative;
+  /*  自定义按钮默认隐藏*/
+  /*visibility: hidden;*/
+}
+.lottery-tabs .lottery-tabs-nav .special .add {
+  height: 0.81rem;
+  position: absolute;
+  right: -0.5rem;
+  font-size: 0.5rem;
+  color: #ffe281;
+  top: 0;
+}
+.lottery-tabs .lottery-tabs-nav .special .subtract {
+  height: 0.81rem;
+  position: absolute;
+  left: -0.5rem;
+  font-size: 0.5rem;
+  color: #ffe281;
+  top: 0;
+}
+
+/* 选项卡内容 */
+.lottery-tabs .lottery-tabs-content .prize {
+  display: none;
+}
+.lottery-tabs .lottery-tabs-content .show {
+  display: block;
+}
+
+.lottery-tabs .lottery-tabs-content {
+  /*width:  800px;
+    height: 754px;*/
+  /*width: 10.67rem;
+    height: 10.05rem;*/
+  margin: 0 auto;
+  /* border: 1px solid black;*/
+}
+
+.lottery-tabs .lottery-tabs-content .prize .goods-img {
+  /* width: 224px; */
+  /* height: 239px;*/
+  /*width: 4.99rem;*/
+  /* height: 3.19rem;*/
+  margin: 0 auto;
+  width: 17%;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .goods-img img {
+  width: 100%;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .goods-name {
+  /*font-size: 32px;*/
+  /*line-height: 100px;*/
+  font-size: 0.63rem;
+  /*line-height: 1.53rem;*/
+  /*line-height: 2.03rem;*/
+  margin-top: 3%;
+  text-align: center;
+  color: #fceb81;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-name {
+  /*font-size: 28px;*/
+  /*line-height: 100px;*/
+  font-size: 0.37rem;
+  line-height: 1.33rem;
+  text-align: center;
+  color: #ffe281;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  z-index: 3;
+  width: 100%;
+  text-shadow: 2px 2px 0px #000;
+}
+
+/* 奖品名称 */
+.lottery-tabs .lottery-tabs-content .prize .lottery-absolute {
+  font-size: 0.7rem;
+  line-height: 1.33rem;
+  text-align: center;
+  color: #ffe281;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #000;
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+}
+/* 奖品名称 */
+.lottery-tabs .lottery-tabs-content .prize .lottery-absolute-timerout {
+  font-size: 3rem;
+  line-height: 1.33rem;
+  text-align: center;
+  /* color: #ffe281; */
+  color: #a5a5a5;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #000;
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+}
+
+/* 参与抽奖人员头像 */
+.lottery-tabs .lottery-tabs-content .prize .people-absolute {
+  /*width: 78%;
+    position: absolute;
+    bottom: 3%;*/
+  /*margin-top: 1vh;*/
+  position: fixed;
+  bottom: 7%;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul,
+.lottery-tabs .lottery-tabs-content .prize .people-name-ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul,
+.lottery-tabs .lottery-tabs-content .prize .people-name-ul .people-name-li {
+  font-size: 0.37rem;
+  line-height: 1.33rem;
+  text-align: center;
+  color: #fceb81;
+  position: relative;
+  z-index: 3;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .people-li {
+  /* width: 336px;
+    height: 214px;*/
+  width: 6.48rem;
+  height: 3.85rem;
+  background: url("../images/border_crown.png") no-repeat center center;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .people-li img {
+  /*width: 174px;
+    height: 174px;*/
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+}
+
+/* 中奖名单 */
+.List-winners {
+  position: fixed;
+  bottom: 3%;
+  width: 2rem;
+  height: 0.7rem;
+  z-index: 3;
+  right: 9%;
+  background-color: #ffd960;
+  border: 2px solid #ffbf57;
+  border-radius: 0.1rem;
+  line-height: 0.7rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #87010c;
+}
+
+/* 抽奖开始按钮 */
+
+.lottery-btn {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  z-index: 999;
+  background: url("../images/btn.png") no-repeat center top;
+  background-size: 100% 100%;
+  /* width: 130px;
+    height: 130px;*/
+  width: 1.73rem;
+  height: 1.73rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lottery-btn p {
+  color: #87010c;
+  /*font-size:32px;*/
+  font-size: 0.43rem;
+}
+
+/* 底部扇子 */
+.lottery-bg .bottom-fan {
+  /*width: 542px;
+    height: 290px;*/
+  width: 7.23rem;
+  height: 3.87rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.lottery-bg .bottom-fan-right {
+  /*width: 542px;
+    height: 290px;*/
+  width: 7.23rem;
+  height: 3.87rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotateY(180deg);
+  z-index: 2;
+}
+
+.lottery-bg .bottom-fan img,
+.lottery-bg .bottom-fan-right img {
+  width: 100%;
+  display: block;
+}
+
+/* 底部木板 */
+.lottery-bg .bottom-floor {
+  width: 100%;
+  /*height: 129px;*/
+  height: 1.72rem;
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  z-index: 1;
+}
+.lottery-bg .bottom-floor img {
+  width: 100%;
+  display: block;
+}
+
+/* 皇冠定位 */
+.lottery-tabs .lottery-tabs-content .prize .people-ul .first-crown:after {
+  content: "";
+  background: url("../images/first_crown.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 186px;
+    height: 106px;*/
+  /*left: 53px;
+    top: -38px;*/
+  width: 2.48rem;
+  height: 1.41rem;
+  /*left: 1.01rem;*/
+  top: -0.83rem;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .second-crown:after {
+  content: "";
+  background: url("../images/second_crown.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 186px;
+    height: 106px;*/
+  /*left: 53px;
+    top: -38px;*/
+  width: 2.48rem;
+  height: 1.41rem;
+  /*left: 1.01rem;*/
+  top: -0.83rem;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .third-crown:after {
+  content: "";
+  background: url("../images/third_crown.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 186px;
+    height: 106px;*/
+  /*left: 53px;
+    top: -38px;*/
+  width: 2.48rem;
+  height: 1.41rem;
+  /*left: 1.01rem;*/
+  top: -0.83rem;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .fourth-crown:after {
+  content: "";
+  background: url("../images/fourth_crown.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 186px;
+    height: 106px;*/
+  /*left: 53px;
+    top: -38px;*/
+  width: 2.48rem;
+  height: 1.41rem;
+  /*left: 0.95rem;*/
+  top: -0.36rem;
+}
+
+.lottery-tabs .lottery-tabs-content .prize .people-ul .fifth-crown:after {
+  content: "";
+  background: url("../images/fifth_crown.png") no-repeat center top;
+  background-size: 100% 100%;
+  position: absolute;
+  /*width: 186px;
+    height: 106px;*/
+  /*left: 53px;
+    top: -38px;*/
+  width: 2.48rem;
+  height: 1.41rem;
+  /* left: 0.95rem;*/
+  top: -0.36rem;
+}
+/* 皇冠定位结束 */
+
+/* 图层蒙版 start */
+/* CSS样式 */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+
+  z-index: 10000;
+  overflow: auto;
+  /* padding: 20px; */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.content {
+  /* 设置大图片背景 */
+  background-image: url("../images/bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100%;
+  color: #f2ba10;
+  display: flex;
+  flex-direction: column;
+}
+.modal-header {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+.modal-lottery {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.lottery-level-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+  margin-bottom: 0.3rem;
+}
+.lottery-level-header {
+  width: 100%;
+  height: 0.6rem;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.6rem;
+  margin-bottom: 0.15rem;
+}
+.lottery-level-main {
+  width: 100%;
+  margin: 0 auto;
+  /* height: 2rem; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.lottery-level-main-item {
+  width: 20%;
+  height: 0.6rem;
+  /* background-color: orange; */
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 0.45rem;
+}
+/* 图层蒙版 end */
+
+.lottery-special-level {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.lottery-one-level {
+  flex: 1;
+  width: 33%;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 1023px) {
+  .lottery-tabs .lottery-tabs-content .prize .people-name {
+    font-size: 0.27rem;
+  }
+}
+@media screen and (width: 1024px) {
+  .lottery-tabs .lottery-tabs-content .prize .people-name {
+    font-size: 0.33rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .lottery-tabs .lottery-tabs-content .prize .people-name {
+    font-size: 0.33rem;
+  }
+}
+@media screen and (width: 1280px) {
+}
+@media screen and (min-width: 1281px) and (max-width: 1365px) {
+}
+@media screen and (width: 1366px) {
+  /* absolute */
+  /* .lottery-tabs .lottery-tabs-content .prize .people-absolute{
+        width: 87%;
+    }*/
+  .lottery-tabs .lottery-tabs-content .prize .goods-img {
+    width: 3.39rem;
+    height: 3.19rem;
+    margin-top: -0.3rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .goods-name {
+    font-size: 0.33rem;
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 1367px) and (max-width: 1439px) {
+}
+@media screen and (width: 1440px) {
+}
+@media screen and (min-width: 1441px) and (max-width: 1599px) {
+}
+@media screen and (width: 1600px) {
+  .lottery-tabs {
+    margin-top: 2.2rem;
+  }
+}
+@media screen and (max-width: 1800px) and (max-height: 520px) {
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .people-li {
+    width: 4rem;
+    height: 2.5rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .people-li img {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+  }
+  .lottery-tabs {
+    margin: 0rem auto 0 !important;
+    padding: 0 2.5rem;
+  }
+  .lottery-banner .top-curtain {
+    width: 5.71rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .goods-name {
+    margin-top: 0%;
+    line-height: 3.53rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-absolute {
+    width: 80%;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 11%;
+  }
+  .lottery-title {
+    width: 6rem;
+    height: 1.8rem;
+    margin: 0 auto;
+    /* padding-top: 0.99rem; */
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .first-crown:after {
+    top: -1.3rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .second-crown:after {
+    top: -1.3rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .third-crown:after {
+    top: -1.3rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fourth-crown:after {
+    top: -0.95rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fifth-crown:after {
+    top: -0.95rem;
+  }
+  .lottery-bg .bottom-fan {
+    width: 4rem;
+    height: 3.87rem;
+    bottom: -1.75rem;
+  }
+  .lottery-bg .bottom-fan-right {
+    width: 4rem;
+    height: 3.87rem;
+    bottom: -1.75rem;
+  }
+  .lottery-bg .bottom-floor {
+    bottom: 2%;
+  }
+  .lottery-banner .left:after,
+  .lottery-banner .right:after {
+    height: 6.3rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .lottery-absolute {
+    top: 38%;
+    transform: translateY(-38%);
+  }
+
+  .lottery-tabs .lottery-tabs-content .prize .lottery-absolute-timerout {
+    font-size: 2.4rem;
+    top: 26%;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  .lottery-bg {
+    background-position: center;
+  }
+
+  /* 模态框 */
+  .modal-header {
+    font-size: 0.65rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.05rem;
+  }
+  .modal-lottery {
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .lottery-level-outer {
+    margin-bottom: 0.03rem;
+  }
+  .lottery-level-header {
+    margin-bottom: 0rem;
+    font-size: 0.5rem;
+  }
+  .close-btn {
+    font-size: 0.6rem;
+  }
+  .modal-lottery {
+    display: none;
+  }
+  .lottery-tabs .lottery-tabs-nav .tab {
+    margin-bottom: 0.4rem;
+    height: 0.85rem;
+    font-size: 0.3rem;
+  }
+  .List-winners {
+    right: 7.7%;
+    cursor: pointer;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-name {
+    font-size: 0.455rem;
+  }
+}
+@media screen and (width: 1920px) {
+  /* tab */
+  .lottery-tabs .lottery-tabs-nav .tab {
+    width: 3.2rem;
+    height: 0.99rem;
+    font-size: 0.36rem;
+    margin-bottom: 0.98rem;
+  }
+  .lottery-tabs .lottery-tabs-nav .on {
+    background: url("../images/tab_active.png") no-repeat center top;
+    background-size: 100% 100%;
+    width: 3.2rem;
+    height: 0.99rem;
+    color: #d34436;
+  }
+  /* 奖品图片位置 */
+  .lottery-tabs .lottery-tabs-content .prize .goods-img {
+    padding-top: 0.9rem;
+  }
+
+  /* add & subtract */
+  .lottery-tabs .lottery-tabs-nav .special .add,
+  .lottery-tabs .lottery-tabs-nav .special .subtract {
+    top: 0.06rem;
+  }
+  /* absolute */
+  /* .lottery-tabs .lottery-tabs-content .prize .people-absolute{
+        width: 91%;
+    }*/
+  /* 地板位置 */
+  .lottery-bg .bottom-floor {
+    bottom: 5%;
+  }
+
+  /* 每一个li的间距调整 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul,
+  .lottery-tabs .lottery-tabs-content .prize .people-name-ul .people-name-li {
+    padding: 0 15%;
+  }
+  .lottery-level-header {
+    margin-top: 0.4rem;
+  }
+}
+@media screen and (min-width: 1921px) and (max-width: 2559px) {
+}
+@media screen and (width: 2560px) {
+  /* 标题 */
+  .lottery-title {
+    width: 16.07rem;
+  }
+  /* 窗帘 */
+  .lottery-banner .top-curtain {
+    width: 18.71rem;
+  }
+  /* 春字 */
+  .lottery-banner .left:after,
+  .lottery-banner .right:after {
+    width: 10.16rem;
+    height: 15.45rem;
+  }
+  /* tab 距离春字的距离 */
+  .lottery-tabs-nav {
+    padding: 0rem 4.73rem;
+  }
+
+  /* tab */
+  .lottery-tabs .lottery-tabs-nav .tab {
+    width: 5.5rem;
+    height: 1.69rem;
+    font-size: 0.66rem;
+    margin-bottom: 0.98rem;
+  }
+  .lottery-tabs .lottery-tabs-nav .on {
+    background: url("../images/tab_active.png") no-repeat center top;
+    background-size: 100% 100%;
+    width: 5.5rem;
+    height: 1.69rem;
+    color: #d34436;
+  }
+  /* 奖品图片位置 */
+  .lottery-tabs .lottery-tabs-content .prize .goods-img {
+    width: 6.99rem;
+  }
+
+  /* add & subtract */
+  .lottery-tabs .lottery-tabs-nav .special .add {
+    top: 0.06rem;
+    right: -1rem;
+  }
+  .lottery-tabs .lottery-tabs-nav .special .subtract {
+    top: 0.06rem;
+    left: -1rem;
+  }
+  .lottery-tabs .lottery-tabs-nav .special .add,
+  .lottery-tabs .lottery-tabs-nav .special .subtract {
+    font-size: 1rem;
+  }
+  /* absolute */
+  /* .lottery-tabs .lottery-tabs-content .prize .people-absolute{
+        width: 93%;
+    }*/
+  /* 地板位置 */
+  .lottery-bg .bottom-floor {
+    bottom: 5%;
+  }
+
+  /* 每一个li的间距调整 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul,
+  .lottery-tabs .lottery-tabs-content .prize .people-name-ul .people-name-li {
+    padding: 0 15%;
+  }
+
+  /* 奖品名称字体大小 */
+  .lottery-tabs .lottery-tabs-content .prize .goods-name {
+    font-size: 0.93rem;
+    margin-top: 11%;
+  }
+
+  /* 每一个li的大小 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .people-li {
+    width: 5.68rem;
+    height: 3.85rem;
+  }
+
+  /* 头像图片的大小调整 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .people-li img {
+    width: 3.32rem;
+    height: 3.32rem;
+  }
+
+  /* 皇冠位置的调整 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fifth-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fourth-crown:after {
+    top: -0.5rem;
+  }
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .third-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .first-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .second-crown:after {
+    top: -1.1rem;
+  }
+  /* 皇冠大小的调整 */
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .first-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .second-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .third-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fourth-crown:after,
+  .lottery-tabs .lottery-tabs-content .prize .people-ul .fifth-crown:after {
+    width: 2.8rem;
+    height: 1.71rem;
+  }
+  /* 抽奖人名字的大小 */
+  .lottery-tabs .lottery-tabs-content .prize .people-name {
+    font-size: 0.47rem;
+  }
+
+  /* 扇子 */
+  .lottery-bg .bottom-fan,
+  .lottery-bg .bottom-fan-right {
+    width: 10.23rem;
+    height: 4.87rem;
+  }
+  /* 开始按钮 */
+  .lottery-btn {
+    width: 2.73rem;
+    height: 2.73rem;
+  }
+  .lottery-btn p {
+    font-size: 0.83rem;
+  }
+}
+@media screen and (min-width: 2561px) {
+}
+
+/* 媒体查询结束 */
+
+/* 预加载头像 */
+.reload-img {
+  display: none;
+}
+.reload-img img {
+  /* width: 174px;
+    height: 174px;*/
+  width: 2.32rem;
+  height: 2.32rem;
+  display: block;
+  border-radius: 50%;
+}
+
+/* 横屏时。。。 */
+/*@media all and (orientation : landscape) {
+    .lottery-bg{
+        background-size: 100% auto;
+    }
+}*/
+/* 竖屏时。。。 */
+/*@media all and (orientation : portrait){
+    .lottery-bg{
+        background-size: auto 100%;
+    }
+   !* .lottery-title{
+        margin-top: 2rem;
+    }
+    .lottery-tabs{
+        margin-top: 8.20rem;
+    }
+    .lottery-tabs .lottery-tabs-content .prize .people-absolute{
+     width: 82%;
+    }*!
+    .lottery-tabs{
+        margin: 50% auto;
+    }
+    .lottery-tabs .lottery-tabs-content .prize .people-absolute{
+        width: 100%;
+    }
+    .lottery-tabs{
+        padding: 0 0;
+    }
+}*/
